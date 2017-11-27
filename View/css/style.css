@@ -1,3 +1,7 @@
 nav{
 	background: rgb(87, 124, 161);
 }
+.dropdown-content
+{
+	min-width: 240px;
+}
