@@ -5,3 +5,7 @@ nav{
 {
 	min-width: 240px;
 }
+.dropdown-content li>a, .dropdown-content li>span
+{
+	color: #577ca1;
+}
