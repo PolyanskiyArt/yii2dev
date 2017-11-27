@@ -24,8 +24,7 @@
                 <li><a href="/Carousel.php">Carousel</a></li>
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="dropdown1">
-                        <>Myfirstname</>
-                    <span id="avanav"><img src="Print/13.JPG" width="40" height="40" ></span>
+                        Myfirstname
                     <i class="material-icons right">arrow_drop_down</i>
                     </a>
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8c74512e-4abf-4893-9e9d-a06a056e31d7" name="yii2dev" url="http://yii2dev">
+        <fileTransfer port="0" mountedRoot="D:\Server\OSPanel\domains\yii2dev" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
