@@ -15,7 +15,7 @@
 <nav>
     <div class="container">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="ic_head_logo.svg" height="64" width="64"></a>
+            <a href="#" class="brand-logo"><img src="../ic_head_logo.svg" height="64" width="64"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">dehaze</i></a>
             <ul class="right hide-on-med-and-down">
