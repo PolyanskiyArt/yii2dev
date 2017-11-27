@@ -20,8 +20,8 @@
                 <i class="material-icons">dehaze</i></a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a class="dropdown-button" href="#!" data-activates="dropdown1">
-                        Name
+                    <a class="dropdown-button" href="#!" data-activates="main-menu">
+                        Testname
                     <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>
@@ -87,9 +87,7 @@
                         <label for="remember" id="">Запомнить?</label>
                     </div>
                     <div class="col s6 right-align">
-
-                        <a href="#!" type="submit" onclick="getF()" class="modal-action modal-close waves-effect waves-green btn-flat">Войти</a>
-
+                        <a href="#!" type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Войти</a>
                     </div>
                 </div>
             </form>
