@@ -9,3 +9,15 @@ nav{
 {
 	color: #577ca1;
 }
+.collection .collection-item.active {
+	background-color: #577ca1;
+}
+
+.collection a.collection-item {
+	color: #577ca1;
+}
+.collapsible-body
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}

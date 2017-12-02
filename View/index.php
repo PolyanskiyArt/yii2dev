@@ -15,7 +15,7 @@
 <nav>
     <div class="container">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../View/ic_head_logo.svg" height="64" width="64"></a>
+            <a href="#" class="brand-logo"><img src="../View/Logo_2.png" height="64" width="64"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">dehaze</i></a>
             <ul class="right hide-on-med-and-down">
@@ -25,7 +25,7 @@
                     <i class="material-icons right">arrow_drop_down</i>
                     </a>
                 </li>
-                <li><a class="modal-trigger" href="#modal1">Войти</a></li>
+                <li><a class="modal-trigger" href="#modal-login">Войти</a></li>
             </ul>
 
             <ul class="side-nav" id="mobile-demo">
@@ -50,6 +50,107 @@
     </div>
 </nav>
 
+
+
+    <ul class="collapsible" data-collapsible="accordion">
+        <li>
+            <div class="row collapsible-header">
+                <div class="col s3 center-align"><b>Farm</b></div>
+                <div class="col s1 center-align"><b>Box #</b></div>
+                <div class="col s1 center-align"><b>Box</b></div>
+                <div class="col s2 center-align"><b>Variety</b></div>
+                <div class="col s1 center-align"><b>Length</b></div>
+                <div class="col s1 center-align"><b>Stems</b></div>
+                <div class="col s1 center-align"><b>Price</b></div>
+                <div class="col s1 center-align"><b>Total</b></div>
+                <div class="col s1 center-align"></div>
+                </div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+            <div class="row collapsible-header">
+                <div class="col s3 center-align">Stampsy</div>
+                <div class="col s1 center-align">1A</div>
+                <div class="col s1 center-align">H</div>
+                <div class="col s2 center-align">checkmate</div>
+                <div class="col s1 center-align">110cm</div>
+                <div class="col s1 center-align">175</div>
+                <div class="col s1 center-align">0.75</div>
+                <div class="col s1 center-align">200.00</div>
+                <div class="col s1 center-align"><span class="new badge" data-badge-caption="">4</span></div>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s2 offset-s3" style="padding-top: 15px">
+                        Сколько добавить к заказу?
+                    </div>
+                <div class="col s2">
+                    <input type="number" size="3" name="num" value="1">
+                </div>
+                    <div class="col s2" style="padding-top: 10px"><button class="btn waves-effect waves-light" type="submit" name="action">Add
+                        <i class="material-icons right">add</i>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row collapsible-header">
+                <div class="col s3 center-align">Garda</div>
+                <div class="col s1 center-align">2B</div>
+                <div class="col s1 center-align">H</div>
+                <div class="col s2 center-align">mix</div>
+                <div class="col s1 center-align">50cm</div>
+                <div class="col s1 center-align">450</div>
+                <div class="col s1 center-align">0.26</div>
+                <div class="col s1 center-align">117.00</div>
+                <div class="col s1 center-align"><span class="new badge" data-badge-caption="">18</span></div>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s2 offset-s3" style="padding-top: 15px">
+                        Сколько добавить к заказу?
+                    </div>
+                    <div class="col s2">
+                        <input type="number" size="3" name="num" value="1">
+                    </div>
+                    <div class="col s2" style="padding-top: 10px"><button class="btn waves-effect waves-light" type="submit" name="action">Add
+                            <i class="material-icons right">add</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row collapsible-header">
+                <div class="col s3 center-align">Rosaprima</div>
+                <div class="col s1 center-align">7A</div>
+                <div class="col s1 center-align">H</div>
+                <div class="col s2 center-align">freedom</div>
+                <div class="col s1 center-align">90cm</div>
+                <div class="col s1 center-align">250</div>
+                <div class="col s1 center-align">0.60</div>
+                <div class="col s1 center-align">150.00</div>
+                <div class="col s1 center-align"><span class="new badge" data-badge-caption="">0</span></div>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s2 offset-s3" style="padding-top: 15px">
+                        Сколько добавить к заказу?
+                    </div>
+                    <div class="col s2">
+                        <input type="number" size="3" name="num" value="1">
+                    </div>
+                    <div class="col s2" style="padding-top: 10px"><button class="btn waves-effect waves-light" type="submit" name="action">Add
+                            <i class="material-icons right">add</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
 <ul id="main-menu" class="dropdown-content">
 
     <li><a href="../View"><i class="material-icons">home</i>Главная</a></li>
@@ -63,7 +164,7 @@
 </ul>
 
 
-<div id="modal1" class="modal">
+<div id="modal-login" class="modal">
     <div class="container">
     <div class="modal-content">
         <h4 class="center-align">Авторизация</h4>
@@ -122,6 +223,7 @@ if ($_GET['login']=="test" && $_GET['password']=="psdtest")
                belowOrigin: true,
             }
         );
+
     })</script>
 </body>
 </html>
