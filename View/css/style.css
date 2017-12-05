@@ -21,3 +21,53 @@ nav{
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
+input[type=number]
+{
+	text-align:center;
+}
+input[type=search]:not(.browser-default)
+{
+	box-sizing:border-box;
+	padding:6px 6px 6px 29px;
+	margin:17px 0;
+	border-radius:14px;
+	background: #224b7a;
+	color:#d9e2ec;
+}
+
+
+input.text.ts_input{
+	border:0;
+	box-sizing:border-box;
+	padding:6px 6px 6px 19px;
+	margin:7px 0;
+	height:28px;
+	line-height:16px;
+	width:230px;
+	border-radius:14px;
+	-o-transition:background-color 0.05s, color 0.05s;
+	transition:background-color 0.05s, color 0.05s;
+	background: #224b7a;
+	padding-left:19px;
+	border-left:8px solid transparent;
+	background-position:left 8px;
+	color:#d9e2ec;
+}
+
+input.text.ts_input::-webkit-input-placeholder{
+	color:#8fadc8
+}
+
+input.text.ts_input::-moz-placeholder,input.text.ts_input:-moz-placeholder{
+	color:#8fadc8
+}
+input.text.ts_input:-ms-input-placeholder {
+	 color:#8fadc8
+}
+input.text.ts_input~.placeholder .ph_content{
+	color:#8fadc8
+}
+input.text.ts_input:focus{
+	background-color:#fff;
+	color:#000
+}

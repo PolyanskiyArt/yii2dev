@@ -9,80 +9,169 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+<header>
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><img src="/View/Logo_2.png" height="64" width="64"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">dehaze</i></a>
 
-<body>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="main-menu">
+                            Имя
+                            <i class="material-icons right">menu</i>
+                        </a>
+                    </li>
+                    <li><a class="modal-trigger" href="#modal-login">Войти</a></li>
+                </ul>
 
-<nav>
-    <div class="container">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../ic_head_logo.svg" height="64" width="64"></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <i class="material-icons">dehaze</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/login">Home</a></li>
-                <li><a href="Cards.php">Cards</a></li>
-                <li><a href="/Carousel.php">Carousel</a></li>
-                <li>
-                    <a class="dropdown-button" href="#!" data-activates="dropdown1">
-                        Name
-                    <i class="material-icons right">arrow_drop_down</i>
-                    </a>
-
-                </li>
-                <li><a class="modal-trigger" href="#modal1">Sign in</a></li>
-            </ul>
-
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="/Home.php">Home</a></li>
-                <li><a href="Cards.php">Cards</a></li>
-                <li><a href="/Carousel.php">Carousel</a></li>
-                <li><a class="modal-trigger" href="#modal1">Войти</a></li>
-            </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><div class="user-view">
+                            <div class="background">
+                                <img src="images/avatar.png">
+                            </div>
+                            <a href="#!user"><img class="circle" src="images/avatar.png"></a>
+                            <a href="#!name"><span class="white-text name">Test name</span></a>
+                            <a href="#!email"><span class="white-text email">test@gmail.com</span></a>
+                        </div></li>
+                    <li><a href="/View"><i class="material-icons">home</i>Главная</a></li>
+                    <li><a href="/View/Profile"><i class="material-icons">account_circle</i>Мой профиль</a></li>
+                    <li><a href="/View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
+                    <li><a href="/View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <div class="container">
+        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+            <i class="material-icons">menu</i>
+        </a>
     </div>
-</nav>
 
-<ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-</ul>
+</header>
+<main>
 
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 class="center-align">Авторизация</h4></div>
-    <div class="modal-body">
-        <div class="row">
-            <form class="col s12">
+<div class="container row">
+        <div class="col s12 m5 card small" style="margin: 10px;" id="myinfo">
+            <div class="card-content">
+                <span class="card-title center-align"><b>Имя фамилия отчество</b></span>
+                <div class="row">
+                   <span class="col s12 center-align">Активный</span>
+                </div>
+                <div class="row"> </div>
                 <div class="row">
 
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input class="validate" type="text" placeholder="Login" id="login">
-                        <label for="login">Логин</label>
+                    <span class="col s6"><b>Регистрация:</b></span>
+                    <span class="col s6 center-align">20.10.2010</span>
+                </div>
+
+                <div class="row">
+
+                    <span class="col s6"><b>Последнее посещение:</b></span>
+                    <span class="col s6 center-align">22.05.2016</span>
+                </div>
+                <div class="row">
+
+                    <span class="col s6"><b>Баланс:</b></span>
+                    <span class="col s6 center-align">28000</span>
+                </div>
+            </div>
+            <div class="card-action right-align"><a href="#">Изменить пароль</a></div>
+        </div>
+
+    <div class="col s12 m5 card small" style="margin: 10px;" id="mydata">
+        <div class="card-content">
+            <span class="card-title center-align"><b>Личные данные</b></span>
+
+            <div class="row"> </div>
+            <div class="row">
+
+                <span class="col s6"><b>Город:</b></span>
+                <span class="col s6 center-align">Краснодар</span>
+            </div>
+
+            <div class="row">
+                <span class="col s6"><b>Количество заказов:</b></span>
+                <span class="col s6 center-align">22</span>
+            </div>
+            <div class="row">
+                <span class="col s6"><b>Сумма расходов:</b></span>
+                <span class="col s6 center-align">42000</span>
+            </div>
+            <div class="row">
+                <span class="col s6"><b>Дата последнего заказа:</b></span>
+                <span class="col s6 center-align">13.07.2017</span>
+            </div>
+        </div>
+        <div class="card-action right-align"><a href="#">Мои заказы</a></div>
+    </div>
+
+	<div class="col s12 m5 card small" style="margin: 10px;">
+
+            <div class="card-content">
+                <span class="card-title center-align"><b>Оповещения о заказах</b></span>
+                <div class="row"></div>
+                <div class="row">
+
+                    <div class="input-field col s8">
+                        <i class="material-icons prefix">mail</i>
+                        <input class="validate" type="text" id="mail">
+                        <label for="mail">Mail</label>
                     </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input  type="password" placeholder="Password" id="password">
-                        <label for="login">Пароль</label>
-                    </div>
-                    <div class="col s6">
-                        <input type="checkbox" id="remember" name="_remember_me" />
-                        <label for="remember" id="">Запомнить?</label>
-                    </div>
-                    <div class="col s6 right-align">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Войти</a>
+                    <div class="col s4" style="padding-top: 30px">
+                        <input type="checkbox" id="useMail" name="_useMail" />
+                        <label for="useMail" id="">Use</label>
                     </div>
                 </div>
-            </form>
+
+                <div class="row">
+                    <div class="input-field col s8">
+                        <i class="material-icons prefix">phone</i>
+                        <input class="validate" type="text" id="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="col s4" style="padding-top: 30px">
+                        <input type="checkbox" id="usePhone" name="_usePhone" />
+                        <label for="usePhone" id="">Use</label>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
 </div>
+
+    <ul id="main-menu" class="dropdown-content">
+
+        <li><a href="../View"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="../View/Profile"><i class="material-icons">account_circle</i>Мой профиль</a></li>
+        <li><a href="../View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
+        <li><a href="../View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
+        <li class="divider"></li>
+        <li><a href="../View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
+        <li class="divider"></li>
+        <li><a href="../View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
+    </ul>
+
+<?php
+
+
+
+if ($_GET['login']=="test" && $_GET['password']=="psdtest")
+{
+    header('Location:Profile/');
+}
+?>
+</main>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="/View/js/materialize.min.js"></script>
 <script>$(document).ready(function(){
         $(".button-collapse").sideNav();
         $(".modal").modal();
@@ -91,7 +180,13 @@
             indicators:true,
             noWrap:true
         });
-        $(".dropdown-button").dropdown();
+        $(".dropdown-button").dropdown(
+            {
+                constrainWidth: false,
+                belowOrigin: true,
+            }
+        );
+
     })</script>
 </body>
 </html>
