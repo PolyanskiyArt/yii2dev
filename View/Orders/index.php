@@ -50,7 +50,7 @@
 
 
 <div class="container">
-    <h5><i class="material-icons">assignment</i> Список ваших заказов</h5>
+    <h5 class="center-align"><i class="material-icons">assignment</i> Список ваших заказов</h5>
     <div class="row"></div>
     <ul class="collapsible" data-collapsible="accordion">
         <?php
@@ -93,7 +93,8 @@
                         <div class=\"col s1 center-align\">240.00</div>
                         <div class=\"col s2 center-align\"></div>
                     </div>
-                </div>          
+                </div>  
+                  <div class=\"row center-align\"><a href=\"#\">Полная выписка</a> </div>        
             </div>
         </li>
     ");
