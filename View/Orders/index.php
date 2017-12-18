@@ -140,14 +140,6 @@
             </div>
         </li>
     </ul>
-
-    <div class="row">
-        <form class="col s12 right-align">
-            <button class="btn waves-effect waves-blue" type="submit" name="action">Оформить заказ
-                <i class="material-icons right">assignment</i>
-            </button>
-        </form>
-    </div>
 </div>
 <ul id="main-menu" class="dropdown-content">
 
