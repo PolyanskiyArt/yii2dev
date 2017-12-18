@@ -71,3 +71,18 @@ input.text.ts_input:focus{
 	background-color:#fff;
 	color:#000
 }
+.card{
+	margin: 30px;
+}
+.btn, .btn-large{
+	background-color: #577ca1;
+}
+.waves-effect.waves-blue .waves-ripple {
+	/* The alpha value allows the text and background color
+    of the button to still show through. */
+	background-color: rgb(87, 124, 161);
+}
+
+.btn:hover, .btn-large:hover {
+	background-color: rgba(87, 124, 161, 0.71);
+}

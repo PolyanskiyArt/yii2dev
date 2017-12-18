@@ -13,9 +13,9 @@
     <nav>
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="/View/Logo_2.png" height="64" width="64"></a>
+                <a href="/View" class="brand-logo"><img src="/View/Logo_2.png" height="64" width="64"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse">
-                    <i class="material-icons">dehaze</i></a>
+                    <i class="material-icons">menu</i></a>
 
                 <ul class="right hide-on-med-and-down">
                     <li>
@@ -41,24 +41,17 @@
                     <li><a href="/View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
                     <li><a href="/View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
                     <li class="divider"></li>
-                    <li><a href="/View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
-                    <li class="divider"></li>
                     <li><a href="/View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
-            <i class="material-icons">menu</i>
-        </a>
-    </div>
-
 </header>
-<main>
+<main> 
+
 
 <div class="container row">
-        <div class="col s12 m5 card small" style="margin: 10px;" id="myinfo">
+        <div class="col s11 m5 l4 card small hoverable" style="margin: 30px" id="myinfo">
             <div class="card-content">
                 <span class="card-title center-align"><b>Имя фамилия отчество</b></span>
                 <div class="row">
@@ -68,24 +61,23 @@
                 <div class="row">
 
                     <span class="col s6"><b>Регистрация:</b></span>
-                    <span class="col s6 center-align">20.10.2010</span>
+                    <span class="col s6 right-align">20.10.2010</span>
                 </div>
 
                 <div class="row">
 
                     <span class="col s6"><b>Последнее посещение:</b></span>
-                    <span class="col s6 center-align">22.05.2016</span>
+                    <span class="col s6 right-align">22.05.2016</span>
                 </div>
                 <div class="row">
-
                     <span class="col s6"><b>Баланс:</b></span>
-                    <span class="col s6 center-align">28000</span>
+                    <span class="col s6 right-align">28000</span>
                 </div>
             </div>
             <div class="card-action right-align"><a href="#">Изменить пароль</a></div>
         </div>
 
-    <div class="col s12 m5 card small" style="margin: 10px;" id="mydata">
+    <div class="col s11 m5 l4 card small hoverable" style="margin: 30px" id="mydata">
         <div class="card-content">
             <span class="card-title center-align"><b>Личные данные</b></span>
 
@@ -93,27 +85,49 @@
             <div class="row">
 
                 <span class="col s6"><b>Город:</b></span>
-                <span class="col s6 center-align">Краснодар</span>
+                <span class="col s6 right-align">Краснодар</span>
             </div>
 
             <div class="row">
                 <span class="col s6"><b>Количество заказов:</b></span>
-                <span class="col s6 center-align">22</span>
+                <span class="col s6 right-align">22</span>
             </div>
             <div class="row">
                 <span class="col s6"><b>Сумма расходов:</b></span>
-                <span class="col s6 center-align">42000</span>
+                <span class="col s6 right-align">42000</span>
             </div>
             <div class="row">
                 <span class="col s6"><b>Дата последнего заказа:</b></span>
-                <span class="col s6 center-align">13.07.2017</span>
+                <span class="col s6 right-align">13.07.2017</span>
             </div>
         </div>
         <div class="card-action right-align"><a href="#">Мои заказы</a></div>
     </div>
 
-	<div class="col s12 m5 card small" style="margin: 10px;">
+    <div class="col s11 m5 l4 card small hoverable" style="margin: 30px" id="mystatistic">
+        <div class="card-content">
+            <span class="card-title center-align"><b>Статистика</b></span>
 
+            <div class="row"> </div>
+
+
+            <div class="row">
+                <span class="col s6"><b>Выполняемые заказы:</b></span>
+                <span class="col s6 right-align">8</span>
+            </div>
+            <div class="row">
+                <span class="col s6"><b>Завершенных заказов:</b></span>
+                <span class="col s6 right-align">14</span>
+            </div>
+            <div class="row">
+                <span class="col s6"><b>Дата последнего заказа:</b></span>
+                <span class="col s6 right-align">13.07.2017</span>
+            </div>
+        </div>
+        <div class="card-action right-align"><a href="#">Мои заказы</a></div>
+    </div>
+
+	<div class="col s11 m5 l4 card small hoverable" style="margin: 30px">
             <div class="card-content">
                 <span class="card-title center-align"><b>Оповещения о заказах</b></span>
                 <div class="row"></div>
@@ -125,8 +139,12 @@
                         <label for="mail">Mail</label>
                     </div>
                     <div class="col s4" style="padding-top: 30px">
-                        <input type="checkbox" id="useMail" name="_useMail" />
-                        <label for="useMail" id="">Use</label>
+                        <div class="switch">
+                            <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
 
@@ -137,8 +155,12 @@
                         <label for="phone">Phone</label>
                     </div>
                     <div class="col s4" style="padding-top: 30px">
-                        <input type="checkbox" id="usePhone" name="_usePhone" />
-                        <label for="usePhone" id="">Use</label>
+                        <div class="switch">
+                            <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,14 +170,12 @@
 
     <ul id="main-menu" class="dropdown-content">
 
-        <li><a href="../View"><i class="material-icons">home</i>Главная</a></li>
-        <li><a href="../View/Profile"><i class="material-icons">account_circle</i>Мой профиль</a></li>
-        <li><a href="../View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
-        <li><a href="../View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
+        <li><a href="/View"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="/View/Profile"><i class="material-icons">account_circle</i>Мой профиль</a></li>
+        <li><a href="/View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
+        <li><a href="/View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
         <li class="divider"></li>
-        <li><a href="../View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
-        <li class="divider"></li>
-        <li><a href="../View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
+        <li><a href="/View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
     </ul>
 
 <?php

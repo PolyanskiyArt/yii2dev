@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../View/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../View/css/nouislider.css"  media="screen,projection"/>
     <link rel="stylesheet" href="../View/css/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,7 +16,7 @@
 <nav>
     <div class="container">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../View/Logo_2.png" height="64" width="64"></a>
+            <a href="/View" class="brand-logo"><img src="../View/Logo_2.png" height="64" width="64"></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse">
                 <i class="material-icons">dehaze</i></a>
             <ul class="brand-logo center">
@@ -31,8 +32,8 @@
             <ul class="right hide-on-med-and-down">
                 <li>
                     <a class="dropdown-button" href="#!" data-activates="main-menu">
-                        Testname
-                    <i class="material-icons right">arrow_drop_down</i>
+                        Имя
+                    <i class="material-icons right">menu</i>
                     </a>
                 </li>
                 <li><a class="modal-trigger" href="#modal-login">Войти</a></li>
@@ -52,8 +53,6 @@
                 <li><a href="../View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
                 <li><a href="../View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
                 <li class="divider"></li>
-                <li><a href="../View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
-                <li class="divider"></li>
                 <li><a href="../View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
             </ul>
         </div>
@@ -61,32 +60,78 @@
 </nav>
 
 
-
+<div class="container">
+    <nav style="background: white; margin-top: 10px;">
+            <div class="nav-wrapper">
+                <div class="container">
+                <ul class="left hide-on-med-and-down collapsible" style="color: black; height: 50px" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header" style="height: 51px;">
+                            <i class="material-icons right" style="line-height: 20px">straighten</i>Размер
+                        </div>
+                        <div class="collapsible-body" style="background: #e4e4e4">
+                            <div class="row" style="width: 300px">
+                               <div id="noUiSlider"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                    <ul class="left hide-on-med-and-down collapsible" style="color: black; height: 50px" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header" style="height: 51px;">
+                                <i class="material-icons right" style="line-height: 20px">filter_vintage</i>Количество
+                            </div>
+                            <div class="collapsible-body" style="background: #e4e4e4">
+                                <div class="row" style="width: 300px">
+                                    <div id="noUiSlider"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="left hide-on-med-and-down collapsible" style="color: black; height: 50px" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header" style="height: 51px;">
+                                <i class="material-icons right" style="line-height: 20px">attach_money</i>Цена
+                            </div>
+                            <div class="collapsible-body" style="background: #e4e4e4">
+                                <div class="row" style="width: 300px">
+                                    <div id="noUiSlider"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
     <ul class="collapsible" data-collapsible="accordion">
         <li>
-            <div class="row collapsible-header">
-                <div class="col s3 center-align"><b>Farm</b></div>
-                <div class="col s1 center-align"><b>Box #</b></div>
-                <div class="col s1 center-align"><b>Box</b></div>
-                <div class="col s2 center-align"><b>Variety</b></div>
-                <div class="col s1 center-align"><b>Length</b></div>
-                <div class="col s1 center-align"><b>Stems</b></div>
-                <div class="col s1 center-align"><b>Price</b></div>
-                <div class="col s1 center-align"><b>Total</b></div>
-                <div class="col s1 center-align"></div>
+            <div class="collapsible-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s3 center-align"><b>Farm</b></div>
+                        <div class="col s2 center-align"><b>Variety</b></div>
+                        <div class="col s2 center-align"><b>Length</b></div>
+                        <div class="col s1 center-align"><b>Stems</b></div>
+                        <div class="col s1 center-align"><b>Price</b></div>
+                        <div class="col s1 center-align"><b>Total</b></div>
+                        <div class="col s2 center-align"></div>
+                    </div>
                 </div>
+            </div>
         </li>
         <li>
-            <div class="row collapsible-header">
+            <div class="collapsible-header">
+                <div class="container">
+                    <div class="row">
                 <div class="col s3 center-align">Stampsy</div>
-                <div class="col s1 center-align">1A</div>
-                <div class="col s1 center-align">H</div>
                 <div class="col s2 center-align">checkmate</div>
-                <div class="col s1 center-align">110cm</div>
+                <div class="col s2 center-align">110cm</div>
                 <div class="col s1 center-align">175</div>
                 <div class="col s1 center-align">0.75</div>
                 <div class="col s1 center-align">200.00</div>
-                <div class="col s1 center-align"><span class="new badge red" data-badge-caption="">0</span></div>
+                <div class="col s2 center-align"><span class="new badge red" data-badge-caption="">0</span></div>
+                    </div>
+                </div>
             </div>
             <div class="collapsible-body">
                 <div class="row">
@@ -103,93 +148,40 @@
                 </div>
             </div>
         </li>
-        <li>
-            <div class="row collapsible-header">
-                <div class="col s3 center-align">Garda</div>
-                <div class="col s1 center-align">2B</div>
-                <div class="col s1 center-align">H</div>
-                <div class="col s2 center-align">mix</div>
-                <div class="col s1 center-align">50cm</div>
-                <div class="col s1 center-align">450</div>
-                <div class="col s1 center-align">0.26</div>
-                <div class="col s1 center-align">117.00</div>
-                <div class="col s1 center-align"><span class="new badge blue" data-badge-caption="">0</span></div>
-            </div>
-            <div class="collapsible-body">
-                <div class="row">
-                    <div class="col s2 offset-s3" style="padding-top: 15px">
-                        Сколько добавить к заказу?
-                    </div>
-                    <div class="col s2">
-                        <input  type="number" size="3" name="num" min="0" value="1">
-                    </div>
-                    <div class="col s2" style="padding-top: 10px"><button class="btn waves-effect waves-light" type="submit" name="action">Add
-                            <i class="material-icons right">add</i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </li>
         <?php
         for($i=0; $i < 587; $i++)
         print_r ("<li>
-            <div class=\"row collapsible-header\">
-                <div class=\"col s3 center-align\">Rosaprima</div>
-                <div class=\"col s1 center-align\">7A</div>
-                <div class=\"col s1 center-align\">H</div>
-                <div class=\"col s2 center-align\">freedom</div>
-                <div class=\"col s1 center-align\">90cm</div>
-                <div class=\"col s1 center-align\">250</div>
-                <div class=\"col s1 center-align\">0.60</div>
-                <div class=\"col s1 center-align\">150.00</div>
-                <div class=\"col s1 center-align\"><span class=\"new badge\" data-badge-caption=\"\">0</span></div>
+            <div class=\"collapsible-header\">
+                <div class=\"container\">
+                    <div class=\"row\">
+                <div class=\"col s3 center-align\">Stampsy</div>
+                <div class=\"col s2 center-align\">checkmate</div>
+                <div class=\"col s2 center-align\">110cm</div>
+                <div class=\"col s1 center-align\">175</div>
+                <div class=\"col s1 center-align\">0.75</div>
+                <div class=\"col s1 center-align\">200.00</div>
+                <div class=\"col s2 center-align\"><span class=\"new badge red\" data-badge-caption=\"\">0</span></div>
+                    </div>
+                </div>
             </div>
             <div class=\"collapsible-body\">
                 <div class=\"row\">
                     <div class=\"col s2 offset-s3\" style=\"padding-top: 15px\">
                         Сколько добавить к заказу?
                     </div>
-                    <div class=\"col s2\">
-                        <input  type=\"number\" size=\"3\" name=\"num\" min=\"0\" value=\"1\">
-                    </div>
+                <div class=\"col s2\">
+                    <input  type=\"number\" size=\"3\" name=\"num\" min=\"0\" value=\"1\">
+                </div>
                     <div class=\"col s2\" style=\"padding-top: 10px\"><button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Add
-                            <i class=\"material-icons right\">add</i>
-                        </button>
+                        <i class=\"material-icons right\">add</i>
+                    </button>
                     </div>
                 </div>
             </div>
         </li>");
         ?>
-        <li>
-            <div class="row collapsible-header">
-                <div class="col s3 center-align">Rosaprima</div>
-                <div class="col s1 center-align">7A</div>
-                <div class="col s1 center-align">H</div>
-                <div class="col s2 center-align">freedom</div>
-                <div class="col s1 center-align">90cm</div>
-                <div class="col s1 center-align">250</div>
-                <div class="col s1 center-align">0.60</div>
-                <div class="col s1 center-align">150.00</div>
-                <div class="col s1 center-align"><span class="new badge" data-badge-caption="">0</span></div>
-            </div>
-            <div class="collapsible-body">
-                <div class="row">
-                    <div class="col s2 offset-s3" style="padding-top: 15px">
-                        Сколько добавить к заказу?
-                    </div>
-                    <div class="col s2">
-                        <input  type="number" size="3" name="num" min="0" value="1">
-                    </div>
-                    <div class="col s2" style="padding-top: 10px"><button class="btn waves-effect waves-light" type="submit" name="action">Add
-                            <i class="material-icons right">add</i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </li>
     </ul>
-
-
+</div>
 <ul id="main-menu" class="dropdown-content">
 
     <li><a href="../View"><i class="material-icons">home</i>Главная</a></li>
@@ -197,7 +189,15 @@
     <li><a href="../View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
     <li><a href="../View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
     <li class="divider"></li>
-    <li><a href="../View/Settings"><i class="material-icons">settings</i>Настройки</a></li>
+    <li><a href="../View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
+</ul>
+
+<ul id="straighten-menu" class="dropdown-content">
+
+    <li><input type="text"><input type="text"></li>
+    <li><a href="../View/Profile"><i class="material-icons">account_circle</i>Мой профиль</a></li>
+    <li><a href="../View/Orders"><i class="material-icons">assignment</i>Мои заказы</a></li>
+    <li><a href="../View/Shopcart"><i class="material-icons">shopping_cart</i>Моя корзина</a></li>
     <li class="divider"></li>
     <li><a href="../View/Help"><i class="material-icons">headset_mic</i>Служба поддержки</a></li>
 </ul>
@@ -238,8 +238,6 @@
 
 <?php
 
-
-
 if ($_GET['login']=="test" && $_GET['password']=="psdtest")
 {
     header('Location:Profile/');
@@ -248,6 +246,7 @@ if ($_GET['login']=="test" && $_GET['password']=="psdtest")
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../View/js/materialize.min.js"></script>
+<script type="text/javascript" src="../View/js/nouislider.js"></script>
 <script>$(document).ready(function(){
         $(".button-collapse").sideNav();
         $(".modal").modal();
@@ -262,7 +261,23 @@ if ($_GET['login']=="test" && $_GET['password']=="psdtest")
                belowOrigin: true,
             }
         );
+    })
+</script>
 
-    })</script>
+<script>
+    var slider = document.getElementById('noUiSlider');
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        step: 1,
+        orientation: 'horizontal', // 'horizontal' or 'vertical'
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });</script>
 </body>
 </html>
